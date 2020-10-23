@@ -2,6 +2,7 @@ import { gql, useQuery } from '@apollo/client'
 import { motion } from 'framer-motion'
 import moment from 'moment'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Rocket from '../../assets/images/rocket.svg'
 import {
   Cards,
@@ -59,10 +60,16 @@ const MissionsPages: React.FC = () => {
       </Container>
     )
 
-  if (error) return <p> ...Error</p>
+  if (error)
+    return (
+      <Container>
+        <p> ...Error</p>
+      </Container>
+    )
 
   return (
     <Container>
+
       <motion.div
         className="wrapper-logo"
         initial={{ scale: 0 }}
@@ -77,11 +84,13 @@ const MissionsPages: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 3, duration: 0.8 }}
       >
+
         <Content>
           {data?.launchesPast.map(
             ({ id, mission_name, launch_site, launch_date_local }) => (
               <>
-                <Cards>
+                <Cards key={id}>
+              <Link to={`/mission_start/${id}`}>
                   <TitleMission> {mission_name} </TitleMission>
                   <DescriptionMission>
                     {launch_site.site_name_long}
@@ -89,8 +98,9 @@ const MissionsPages: React.FC = () => {
                   <DateMission>
                     {moment(launch_date_local).format('DD/MM/YYYY HH:mm')}
                   </DateMission>
+                </Link>
                 </Cards>
-              </>
+                </>
             )
           )}
         </Content>

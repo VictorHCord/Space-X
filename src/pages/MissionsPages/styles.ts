@@ -25,7 +25,7 @@ export const Container = styled.div`
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
   }
 `
 
@@ -33,6 +33,11 @@ export const Content = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+
+  a {
+    padding: 0;
+    text-decoration: none;
+  }
 `
 
 export const Cards = styled.div`
@@ -74,8 +79,10 @@ export const TitleMission = styled.h2`
 export const DescriptionMission = styled.span`
   display: flex;
   padding: 10px;
+  color: #fff;
 `
 export const DateMission = styled.span`
   padding: 10px;
   font-weight: 600;
+  color: #fff;
 `

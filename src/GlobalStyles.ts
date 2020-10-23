@@ -18,4 +18,11 @@ body, input, button{
   font-family: 'Piazzolla', Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+  border: 0; /* 1 */
+  -ms-interpolation-mode: bicubic; /* 2 */
+}
 `
