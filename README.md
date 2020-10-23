@@ -1,10 +1,11 @@
 <h1 align="center">
 <br>
-<img src="./src/assets/images/rocket.svg" alt="Space-X" width="140">
+<img src="./src/assets/images/rocket.svg" height="210" alt="Space-X" width="200">
 <br>
 <br>
 Space - X
 </h1>
+<br>
 
 ## :computer: Tecnologias
 
@@ -16,6 +17,7 @@ Space - X
 - ESlint
 - Prettier
 - React Router DOM
+- Polished
 
 <br>
 
