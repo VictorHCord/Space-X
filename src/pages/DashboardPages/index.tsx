@@ -49,7 +49,7 @@ const DashboardPages: React.FC = () => {
             <img src={Taken} alt="Siga e encontre oque deseja" />
           </ImagensMain>
         </Content>
-        <Link to="/app" className="button-sign">
+        <Link to="/dashboard" className="button-sign">
           <FiArrowRight size={26} color="rgba(8, 0, 0, 0.6)" />
         </Link>
       </motion.div>
