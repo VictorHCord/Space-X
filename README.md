@@ -22,9 +22,9 @@ Space - X
 <br>
 
 <h2> Para rodar a aplicação </h2>
- - Execute ```npm install``` ou ``` yarn install ```` de frontend para instalar as dependências.
+ - Execute npm installou yarn install de frontend para instalar as dependências.
  <br>
- - Rode ```yarn start``` na pasta de frontend para utilizar. Acesse via **localhost:3000**.
+ - Rode yarn start na pasta de frontend para utilizar. Acesse via **localhost:3000**.
  <br>
 <h2> Porque escolheu fazer uma aplicação simples? </h2>
 <p> O Objetivo dessa aplicação não é a complexidade e sim desenvolver o conhecimento em algumas stacks </p>
