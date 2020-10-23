@@ -13,10 +13,6 @@ import {
   ImagensMain
 } from './styles'
 
-
-
-
-
 const DashboardPages: React.FC = () => {
   return (
     <Container>
@@ -49,7 +45,7 @@ const DashboardPages: React.FC = () => {
             <img src={Taken} alt="Siga e encontre oque deseja" />
           </ImagensMain>
         </Content>
-        <Link to="/dashboard" className="button-sign">
+        <Link to="/mission_start" className="button-sign">
           <FiArrowRight size={26} color="rgba(8, 0, 0, 0.6)" />
         </Link>
       </motion.div>

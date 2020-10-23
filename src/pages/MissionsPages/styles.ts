@@ -1,3 +1,4 @@
+import { lighten } from 'polished'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -28,6 +29,50 @@ export const Container = styled.div`
   }
 `
 
-export const Content = styled.div``
+export const Content = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+`
 
-export const Cards = styled.span``
+export const Cards = styled.div`
+  cursor: pointer;
+  background-color: #15c3d6;
+  border: 1px solid #bababb;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px 0 0 10px;
+  flex-grow: 1;
+  width: calc(100% * (1 / 5) - 10px - 1px);
+
+  :hover {
+    background-color: ${lighten(0.03, '#15c3d6')};
+  }
+`
+
+export const TitleMission = styled.h2`
+  font-weight: 500;
+  color: #fff;
+  font-family: Piazzolla;
+  text-align: center;
+
+  ::after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0.9375rem auto;
+    border-radius: 6px;
+  }
+`
+
+export const DescriptionMission = styled.span`
+  display: flex;
+  padding: 10px;
+`
+export const DateMission = styled.span`
+  padding: 10px;
+  font-weight: 600;
+`
