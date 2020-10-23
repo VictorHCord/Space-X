@@ -32,13 +32,21 @@ Space - X
 <p> Essa é uma aplicação para aplicar conhecimentos sobre algumas ferramentas.
 O Projeto é sobre informações do Space-X e sobre as missões deles realizadas.</p>
 <br>
+
+<div align="center">
 <h2> Pagina incial da aplicação</h2>
 <img src="./src/assets/images/landing_page.png" alt="Detalhes da missão do Space X" height="425">
+</div>
 <br>
+
+<div align="center">
 <h2> Escolha a missão </h2>
 <p> Aqui você encontrará 10 missões sobre o Space-X e poderá escolher em detalhes qual você quer ver </p>
 <img src="./src/assets/images/missions.png" alt="Detalhes da missão do Space X" height="425">
+</div>
+
+<div align="center">
 <h2> Detalhamento da missão</h2>
 <p> Aqui você poderá ver detalhadamente como foi a missão realizada, também poderá ver o video ou artigos sobre </p>
 <img src="./src/assets/images/details_mission.png" alt="Detalhes da missão do Space X" height="425">
-
+</div>
