@@ -56,6 +56,9 @@ export const TitleMission = styled.h2`
   color: #fff;
   font-family: Piazzolla;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   ::after {
     content: '';
